@@ -13,4 +13,4 @@ cards.forEach(card => {
     observer.observe(card);
 });
 
-console.log("Animações carregadas!");
+console.log("Tema tropical alegre carregado!");
