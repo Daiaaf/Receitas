@@ -1,17 +1,87 @@
-
 body {
-  font-family: Arial;
-  background: #fff8dc;
-  padding: 20px;
+    font-family: Arial;
+    background: linear-gradient(180deg,#fff3c4,#ffd8a8);
+    margin:0;
+    text-align:center;
 }
-h1 { text-align: center; }
-.card {
-  width: 90%;
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 15px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.navbar{
+    background:#ffb347;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
 }
-.card img { width: 100%; border-radius: 8px; }
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+.navbar a{
+    text-decoration:none;
+    color:#6a3f00;
+    font-weight:bold;
+}
+.titulo-animado{
+    font-size:32px;
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float{
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-8px)}
+    100%{transform:translateY(0)}
+}
+.card{
+    background:white;
+    margin:20px auto;
+    width:90%;
+    max-width:400px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+.btn:hover{
+    transform:scale(1.07);
+}
+.btn-rosa{background:#ff6b9d;}
+.btn-verde{background:#4cd197;}
+.btn-amarelo{background:#ffbe3b;}
+
+.fade-in{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.recipe-container{
+    width:90%;
+    max-width:600px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+.recipe-img{
+    width:100%;
+    border-radius:10px;
+}
+.steps li{
+    text-align:left;
+    margin:10px 0;
+}
